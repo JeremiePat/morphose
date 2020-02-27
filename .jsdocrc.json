@@ -1,0 +1,19 @@
+{
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "template": "node_modules/ink-docstrap/template",
+    "recurse": true
+  },
+  "templates": {
+    "systemName": "Morphose",
+    "copyright": "© 2020, Jérémie Patonnier. Available under BSD-3-Clause Licence",
+    "theme": "sandstone",
+    "linenums": false,
+    "collapseSymbols": false,
+    "inverseNav": false,
+    "outputSourceFiles": false,
+    "outputSourcePath": false,
+    "dateFormat": "MMM. Do YYYY",
+    "syntaxTheme": "dark"
+  }
+}

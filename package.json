@@ -1,0 +1,59 @@
+{
+  "name": "morphose",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=13.0.0"
+  },
+  "description": "A library to smoothly morph two SVG path.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint lib/**/*.js",
+    "make:doc": "jsdoc lib/**/*.js -c .jsdocrc.json -d docs"
+  },
+  "keywords": [
+    "svg",
+    "sfx",
+    "vector",
+    "2D",
+    "morphing"
+  ],
+  "author": "Jérémie Patonnier",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.3",
+    "ink-docstrap": "^1.3.2",
+    "jest": "^25.1.0",
+    "jsdoc": "^3.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/__tests__/__.*.js$"
+    ]
+  }
+}
