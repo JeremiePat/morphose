@@ -54,6 +54,9 @@
   "jest": {
     "testPathIgnorePatterns": [
       "/__tests__/__.*.js$"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/__tests__/__.*.js$"
     ]
   }
 }
