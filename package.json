@@ -1,6 +1,6 @@
 {
   "name": "morphose",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha",
   "engines": {
     "node": ">=13.0.0"
   },

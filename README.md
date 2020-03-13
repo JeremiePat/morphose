@@ -12,7 +12,7 @@ npm i github.com:JeremiePat/morphose
 
 ## Usage
 
-See the online documentation for details: [https://github.io/JeremiePat/morphose]()
+See the online documentation for details: https://jeremiepat.github.io/morphose/
 
 ### RoadMap
 
