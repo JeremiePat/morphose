@@ -1,12 +1,14 @@
 {
   "name": "morphose",
   "version": "0.0.1-alpha",
-  "engines": {
-    "node": ">=13.0.0"
-  },
+  "author": "Jérémie Patonnier",
+  "license": "BSD-3-Clause",
   "description": "A library to smoothly morph two SVG path.",
   "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": ">=13.0.0"
+  },
   "scripts": {
     "test": "npm run lint && jest",
     "test:watch": "jest --watch",
@@ -21,19 +23,17 @@
     "2D",
     "morphing"
   ],
-  "author": "Jérémie Patonnier",
-  "license": "BSD-3-Clause",
   "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^11.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "husky": "^4.2.3",
-    "jest": "^25.1.0",
-    "jsdoc": "^3.6.3",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "jsdoc": "^3.6.6",
     "jsdoc-template": "git+https://github.com/braintree/jsdoc-template.git"
   },
   "husky": {
@@ -41,22 +41,5 @@
       "pre-commit": "npm run lint",
       "pre-push": "npm test"
     }
-  },
-  "babel": {
-    "env": {
-      "test": {
-        "plugins": [
-          "@babel/plugin-transform-modules-commonjs"
-        ]
-      }
-    }
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "/__tests__/__.*.js$"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/__tests__/__.*.js$"
-    ]
   }
 }
