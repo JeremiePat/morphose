@@ -3,5 +3,6 @@ export default {
   collectCoverageFrom: [
     'lib/**/*.js',
     '!**/__tests__/*.js'
-  ]
+  ],
+  coverageReporters: ['text', 'html']
 }
