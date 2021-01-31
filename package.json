@@ -1,9 +1,9 @@
 {
   "name": "morphose",
-  "version": "0.0.1-alpha",
+  "version": "0.0.2-alpha",
   "author": "Jérémie Patonnier",
   "license": "BSD-3-Clause",
-  "description": "A library to smoothly morph two SVG path.",
+  "description": "A library to deal with SVG path",
   "type": "module",
   "main": "index.js",
   "engines": {
